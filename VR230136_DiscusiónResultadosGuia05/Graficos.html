@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<title>Aplicación de Gráficos</title>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="form-group">
+        <label for="data-select">Selecciona los datos a graficar:</label>
+        <select id="data-select" class="form-control">
+            <option value="navegador">Uso de Navegador</option>
+            <option value="sistema_operativo">Uso de Sistema Operativo</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="color-select">Selecciona el color del gráfico:</label>
+        <select id="color-select" class="form-control">
+            <option value="red">Rojo</option>
+            <option value="blue">Azul</option>
+            <option value="green">Verde</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="orientation-select">Selecciona la orientación de las barras:</label>
+        <select id="orientation-select" class="form-control">
+            <option value="vertical">Vertical</option>
+            <option value="horizontal">Horizontal</option>
+        </select>
+    </div>
+
+    <button id="generate-chart" class="btn btn-primary">Generar Gráfico</button>
+
+    <div id="myChart" style="width:100%;height:400px;"></div>
+</div>
+
+<script src="Graficos.js"></script>
+
+</body>
+</html>
